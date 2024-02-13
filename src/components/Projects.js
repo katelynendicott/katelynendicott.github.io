@@ -20,63 +20,63 @@ export const Projects = () => {
             category: "code",
             title: "GeoLocation API",
             tags: ["C#", "REST API", ".NET Framework","JSON", "SQL" ,"JavaScript", "HTML", "CSS"],
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            description: "Full-Stack Development",
             imgUrl: projImg1
         },
         {
             category: "data",
             title: "MLB Player Analysis",
             tags: ["Data Analysis", "Tableau", "Data Cleaning"],
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            description: "Data Analysis",
             imgUrl: projImg2
         },
         {
             category: "design",
             title: "Admin Page UX",
             tags: ["Agile", "Figma"],
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            description: "UX Design",
             imgUrl: projImg3
         },
         {
             category: "design",
             title: "Verdi Website Design",
             tags: ["Brand Design", "Website Design", "SquareSpace"],
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            description: "Brand & Website Design",
             imgUrl: projImg4
         },
         {
             category: "code",
             title: "Secret Santa",
             tags: ["Website Design", "HTML", "CSS"],
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            description: "Front-end Development",
             imgUrl: projImg5
         },
         {
             category: "design",
             title: "MISA Website",
             tags: ["Website Design", "Weebly"],
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            description: "Website Design",
             imgUrl: projImg6
         },
         {
             category: "design",
             title: "Kate Taylor Website",
             tags: ["Website Design", "Shopify"],
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            description: "Brand & Website Design",
             imgUrl: projImg7
         },
         {
             category: "design",
             title: "Mt Baker Magazine Design",
             tags: ["Graphic Design", "Adobe InDesign"],
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            description: "Graphic Design",
             imgUrl: projImg8
         },
         {
             category: "design",
             title: "AvoDough Brand Design",
             tags: ["Brand Design", "Adobe Illustrator"],
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            description: "Brand Design",
             imgUrl: projImg9
         }
     ]
