@@ -101,19 +101,38 @@ export const Projects = () => {
 
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">Code</Nav.Link>
+                                <Nav.Link eventKey="first">All</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">Data</Nav.Link>
+                                <Nav.Link eventKey="second">Code</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="third">Design</Nav.Link>
+                                <Nav.Link eventKey="third">Data</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="fourth">Design</Nav.Link>
                             </Nav.Item>
                             </Nav>
 
 
                             <Tab.Content>
-                                <Tab.Pane eventKey="first">
+                            <Tab.Pane eventKey="first">
+                                    <Row xs={1} md={2} className="g-4">
+                                    {
+                                            projectData.map((project, idx) => {
+                                                return(
+                                                    <Col>
+                                                        <ProjectCard
+                                                    key={idx}
+                                                    {...project}
+                                                    />
+                                                    </Col>
+                                                )
+                                            })                                   
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="second">
                                     <Row xs={1} md={2} className="g-4">
                                         {
                                             codingProjects.map((project, idx) => {
@@ -129,7 +148,7 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="second">
+                                <Tab.Pane eventKey="third">
                                     <Row xs={1} md={2} className="g-4">
                                     {
                                             dataProjects.map((project, idx) => {
@@ -145,7 +164,7 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="third">
+                                <Tab.Pane eventKey="fourth">
                                     <Row xs={1} md={2} className="g-4">
                                     {
                                             designProjects.map((project, idx) => {
@@ -161,6 +180,7 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
+                                
 
                             </Tab.Content>
 
