@@ -34,8 +34,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
+  background-color: #FF99C8 !important;
+  color: black !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -61,11 +61,12 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 25%;
+    text-transform: uppercase;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: black !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -86,7 +87,7 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: #FF99C8;
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -118,8 +119,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: black;
+  border: 1px solid black;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -135,7 +136,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #FF99C8;
   left: 0;
   top: 0;
   z-index: -1;
@@ -200,9 +201,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
+  position: relative;
   margin-top: 0;
-  padding: 230px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  padding: 230px 0 230px 0;
+  background-color: #FCF6BD;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -210,11 +212,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 15px 25px;
+  background: #D0F4DE;
+  border: 1px solid black;
+  border-radius: 50px;
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   display: inline-block;
 }
 .banner h1 {
@@ -226,14 +229,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: black;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: black;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -245,12 +248,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner button svg {
   font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
+  margin: 1px 15px;
+  transition: transform 0.3s ease-in-out; /* Adjusted transition property */
   line-height: 1;
 }
 .banner button:hover svg {
-  margin-left: 25px;
+  transform: rotate(90deg); /* Rotate the SVG 90 degrees */
 }
 .banner img {
   animation: updown 3s linear infinite;
@@ -266,26 +269,47 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         transform: translateY(-20px);
     }
 }
-.txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
+
+
+.banner h1 .wrap::after {
+  content: '';
+  border-right: 1.4px solid black; /* Adjust the color and thickness as needed */
+  padding-left: 5px; /* Adjust spacing between the text and the vertical line */
+  margin-left: 5px; /* Adjust spacing between the vertical line and the next element */
 }
 
 
+.wavy-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust the height of the wavy line */
+}
 
+.wavy-line svg {
+  width: 100%;
+  height: 100%;
+}
+
+.wavy-line path {
+  fill: #FF99C8; /* Color of the wavy line */
+}
 
 
 
 
 /************ Skills Css ************/
 .skills{
-  margin: 100px 100px;
+  margin: 200px 100px;
 }
 .skill-bx {
-  background: #1A1A1A;
+  background: #fff;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  border: 2px solid black;
 }
 
 .skill-grid {
@@ -295,6 +319,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skills h2 {
   font-size: 45px;
 	font-weight: 700;
+  text-transform: uppercase;
+  color: #98A2FF;
 }
 
 .card {
@@ -306,15 +332,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .card-title {
   margin-bottom: 30px !important;
-  color: #fff !important;
+  color: black !important;
 }
 
 .tag {
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(to bottom right, #98A2FF, #FF99C8, #FCF6BD);
   border-radius: 10px;
+  border: 1.5px solid black;
   padding: 8px 15px 8px 15px;
   margin: 8px;
-  color: #fff;
+  color: black;
   display: inline-block;
   white-space: nowrap;
   cursor: default;

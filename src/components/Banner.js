@@ -1,22 +1,22 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Web Dev", "Software Dev", "Data Analyst"];
+    const toRotate = ["Software Developer.....", "Data Analyst.....", "UX Designer....."];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 900;
+    const [delta, setDelta] = useState(100);
+    const period = 1100;
 
     useEffect(() => {
-        let ticker = setInterval(() =>{
+        let ticker = setInterval(() => {
             tick();
         }, delta)
 
-        return () => { clearInterval(ticker)};
+        return () => { clearInterval(ticker) };
     }, [text])
 
     const tick = () => {
@@ -26,40 +26,40 @@ export const Banner = () => {
 
         setText(updatedText);
 
-        if(isDeleting) {
-            setDelta(prevDelta => prevDelta /2)
+        if (isDeleting) {
+            setDelta(prevDelta => prevDelta / 2)
         }
 
-        if (!isDeleting && updatedText === fullText){
+        if (!isDeleting && updatedText === fullText) {
             setIsDeleting(true);
             setDelta(period);
-        } else if(isDeleting && updatedText === ''){
+        } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(100);
         }
     }
-
 
     return (
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={10} xl={10}>
                         <span className="tagline">Welcome to my portfolio</span>
                         <h1>{`Hi, I'm a `}<span className="wrap">{text}</span></h1>
-                        <p>Welcome to my portfolio! I'm Katelyn, a passionate software developer based in the Greater Seattle area. 
-                        I thrive on the intersection of creativity and technology, channeling my love for coding into visually appealing creations. 
-                        Whether it's crafting dynamic websites or captivating data visualizations, I eagerly tackle any challenge, leveraging my 
-                        creativity to bring fresh ideas to life. </p>
-                        <button onClick={() => console.log("connect")}>Lets Connect <ArrowRightCircle size={25}/></button>
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt='header image'></img>
+                        <p>Welcome to my portfolio! I'm Katelyn, a passionate software developer based in the Greater Seattle area.
+                            I thrive on the intersection of creativity and technology, channeling my love for coding into visually appealing creations.
+                            Whether it's crafting dynamic websites or captivating data visualizations, I eagerly tackle any challenge, leveraging my
+                            creativity to bring fresh ideas to life. </p>
+                        <button onClick={() => console.log("View More")}>View More <ArrowRightCircle size={25} /></button>
                     </Col>
                 </Row>
             </Container>
-
+            <div className="wavy-line">
+                <svg id="wave-svg" viewBox="0 0 1000 200" preserveAspectRatio="none">
+                    <path id="wave-path" fill="#FF99C8"></path>
+                </svg>
+            </div>
         </section>
     )
 }
