@@ -56,9 +56,7 @@ export const Banner = () => {
                 </Row>
             </Container>
             <div className="wavy-line">
-                <svg id="wave-svg" viewBox="0 0 1000 200" preserveAspectRatio="none">
-                    <path id="wave-path" fill="#FF99C8"></path>
-                </svg>
+                
             </div>
         </section>
     )

@@ -280,13 +280,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-.wavy-line {
+/* .wavy-line {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 60px; /* Adjust the height of the wavy line */
-}
+/* }
 
 .wavy-line svg {
   width: 100%;
@@ -294,7 +294,48 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .wavy-line path {
-  fill: #FF99C8; /* Color of the wavy line */
+  fill: #FF99C8; /* Color of the wavy line 
+}  */
+
+
+.wavy-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #FF99C8 50%,
+    noise(#444 5px) 100%
+  );
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* Ensure smooth repetition */
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      #FF99C8 50%,
+      transparent 100%
+    );
+    animation: wave-anim 2s linear infinite;
+  }
+}
+
+@keyframes wave-anim {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust this value for wave speed */
+  }
 }
 
 
@@ -449,30 +490,63 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 2px solid black;
   border-radius: 0 55px 55px 0;
 }
+
+
+/* __________________________ */
+
+
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  background-color: pink; /* Default background color */
+
 }
+
+.proj-imgbx:hover {
+  background-color: transparent; 
+}
+
 .proj-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
+
+.proj-imgbx.category-code::before {
+  content: "";  
+  background-color: #D0F4DE;
   position: absolute;
   width: 100%;
-  height: 0;
+  height: 100%;
   transition: 0.4s ease-in-out;
 }
-.proj-imgbx:hover::before {
+
+.proj-imgbx.category-data::before {
+  content: "";  
+  background-color: #FCF6BD;
+  position: absolute;
+  width: 100%;
   height: 100%;
+  transition: 0.4s ease-in-out;
 }
-.proj-txtx {
+
+.proj-imgbx.category-design::before {
+  content: "";  
+  background-color: #A9DEF9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+.proj-imgbx:hover::before {
+  opacity: 0.5; 
+}
+/* ______________________________________ */
+
+.proj-btn {
   position: absolute;
   text-align: center;
   top: 65%;
@@ -482,9 +556,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
-.proj-imgbx:hover .proj-txtx {
+.proj-imgbx:hover .proj-btn {
   top: 50%;
   opacity: 1;
+}
+
+.proj-btn button {
+  padding: 20px 40px;
+  background-color: #98A2FF;
+  color: black;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 65%;
+  opacity: 0;
 }
 
 .proj-txtx h4 {
@@ -499,12 +596,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 30px 40px;
 }
 .proj-txtx .tag-proj {
-  background: transparent;
+  background: linear-gradient(to bottom right, #98A2FF, #FF99C8, #FCF6BD);;
   border-radius: 10px;
-  border: #fff solid 2px;
+  border: black solid 1.5px;
   padding: 5px 12px 5px 12px;
   margin: 0px 5px 20px 5px;
-  color: #fff;
+  color: black;
   display: inline-block;
   white-space: nowrap;
   cursor: default;
@@ -518,6 +615,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
   margin: 10px 40px 0px 40px;
 }
+
+
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -526,6 +625,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+
+
+
 
 
 /************ Contact Css ************/
