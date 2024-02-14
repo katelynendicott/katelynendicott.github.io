@@ -1,0 +1,92 @@
+
+[
+    {
+        "id": 1,
+        "type": "code",
+        "projectName": "GeoLocation API",
+        "tagLine": "Full-Stack Development",
+        "tags": ["C#", "REST API", ".NET Framework","JSON", "SQL" ,"JavaScript", "HTML", "CSS"],
+        "overview": "Streamline an existing manual process of spatializing BL data, empowering departments to use the spatialized data set in future projects. Then use the newly spatialized BL data to build an interactive visualization and analysis tool as a web map.",
+        "keyFeatures": ["REST API", "UserFriendly Query Interface", "Forward Geolocation"],
+        "challenges": [
+            {
+                "description": "Limited techologies available to use",
+                "solutions": [
+                    {
+                    "description": "mapped out current systems and determined how i can use them to get what i need to be done."
+                    }
+                ]
+            },
+            {
+                "description": "Limited Time, only 2 weeks for coding",
+                "solutions": [
+                    {
+                    "description": "Had stages in the project, had a base stage that had what was needed, then if i finished it had more features to add if there was time."
+                    }
+                ]
+            },
+            {
+                "description": "Limited Experience using C# and .NET",
+                "solutions": [
+                    {
+                    "description": "Even when we werent in the coding stages of the project, i was practicing coding. Mapping out how it exactly needed to be done left little room for confusion"
+                    }
+                ]
+            }
+        ],
+        "image" : "/assets/img/code-projects/image.png",
+        "link" : "#",
+        "outcome" : "Achieved a 90% increase in geolocation accuracy by developing a REST API tool, using C#, that extracted data and conducted forward geolocation. This enhancement facilitated precise mapping for over 5,000 user-entered business addresses and significantly expanded the scope of spatialization.Enhanced user experience through the development of an intuitive query interface and dynamic visualization of data, utilizing the power of the API tool."
+    }
+]
+        
+
+
+[
+    {
+        "id": 2,
+        "type": "data",
+        "projectName": "MLB Player Analysis",
+        "tagLine": "Data Analysis",
+        "tags": ["Data Analysis", "Tableau", "Data Cleaning"],
+        "overview": "Utilized player statistics and salaries from the 2022 season to explore the correlation between salary and skill. Additionally, developed a compelling use case for further performance analysis of players.",
+        "keyFeatures": ["MLB Manager Case Study", "Money & Skill trends"],
+        "methodology" : "tbd",
+        "keyInsights" : ["Money and skill are related", "Many players are overvalued"],
+        "image" : "",
+        "link" : "#",
+        "note" : "This project is soley based on the 2022 season, I would like to expand this in the future to use contious data. I would also like to code the case study.",
+        "impact" : "Helps mlb managers make player decisions"
+    }
+
+]
+
+
+[
+    {
+        "id": 3,
+        "type": "design",
+        "projectName": "Admin Page UX",
+        "tagLine": "UX Design",
+        "tags": ["Agile", "Figma"],
+        "overview": "Redesigned Admin page of Reading Room to be more intuitive and user friendly.",
+        "keyFeatures": ["Condensed features", "Distinct pages"],
+        "before-images" : [ 
+                            "/assets/img/design-projects/ReadingRoom/image.png", 
+                            "", 
+                            ""
+                        ],
+        "wireframes" : [
+                            "", 
+                            "", 
+                            ""
+                        ],
+        "finalImages" : [
+                            "", 
+                            "", 
+                            ""
+                        ],
+        "link" : "#",
+    }
+
+]

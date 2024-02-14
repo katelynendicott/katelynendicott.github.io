@@ -26,7 +26,7 @@ export const Skills = () => {
 
 
     return (
-        <section className='skills'>
+        <section className='skills' id='skills'>
             <div className='skill-bx'>
                 <h2>
                     Skills
