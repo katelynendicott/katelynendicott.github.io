@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+
 
 
 import { act } from "react-dom/test-utils";
@@ -34,7 +34,7 @@ export const NavBar = () => {
     }
 
     return(
-    <Navbar expand="lg" className={scrolled && ""}>
+    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
     <Container>
         <Navbar.Brand href="#home">
             <h2>Katelyn Endicott</h2>
@@ -50,9 +50,8 @@ export const NavBar = () => {
         </Nav>
         <span className="navbar-text">
             <div className="social-icon">
-                <a href='#'><img src={navIcon1} alt='Linkedin'></img></a>
-                <a href='#'><img src={navIcon2} alt='GitHub'></img></a>
-                <a href='#'><img src={navIcon3} alt='#'></img></a>
+                <a id="linkedin" href='#'><img src={navIcon1} alt='Linkedin'></img></a>
+                <a id="git" href='#'><img src={navIcon2} alt='GitHub'></img></a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
                 <span>

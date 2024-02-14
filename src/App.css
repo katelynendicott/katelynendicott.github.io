@@ -58,7 +58,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #FCF6BD;
 }
 nav.navbar a.navbar-brand {
     width: 25%;
@@ -87,21 +87,21 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: #FF99C8;
+    background: transparent;
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #FF99C8;
     border-radius: 50%;
     transform: scale(0);
 	  transition: 0.3s ease-in-out;
@@ -110,10 +110,11 @@ span.navbar-text {
     transform: scale(1);
 }
 .social-icon a img {
-	width: 40%;
+	width: 50%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
+
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
@@ -204,7 +205,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   position: relative;
   margin-top: 0;
-  padding: 230px 0 230px 0;
+  padding: 230px 0 0px 0;
   background-color: #FCF6BD;
   background-position: top center;
   background-size: cover;
@@ -247,29 +248,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: transparent;
   border: none;
 }
-.banner button svg {
+.banner button #arrow {
   font-size: 25px;
   margin: 1px 15px;
   transition: transform 0.3s ease-in-out; /* Adjusted transition property */
   line-height: 1;
 }
-.banner button:hover svg {
+.banner button:hover #arrow {
   transform: rotate(90deg); /* Rotate the SVG 90 degrees */
 }
-.banner img {
-  animation: updown 3s linear infinite;
+
+
+
+/* Your CSS file */
+
+.svg-container {
+  overflow: hidden;
+  margin-top: 100px;
 }
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
+
+.wave {
+  background: url("./assets/img/wavy.svg") repeat-x;
+  height: 70px;
+  width: 3840px;
+  animation: slide 20s linear infinite;
 }
+
+@keyframes slide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1920px, 0, 0);
+  }
+}
+
+
+
+
 
 
 .banner h1 .wrap::after {
@@ -280,63 +296,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-/* .wavy-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px; /* Adjust the height of the wavy line */
-/* }
 
-.wavy-line svg {
-  width: 100%;
-  height: 100%;
-}
-
-.wavy-line path {
-  fill: #FF99C8; /* Color of the wavy line 
-}  */
-
-
-.wavy-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    #FF99C8 50%,
-    noise(#444 5px) 100%
-  );
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%; /* Ensure smooth repetition */
-    height: 100%;
-    background: linear-gradient(
-      to right,
-      transparent 0%,
-      #FF99C8 50%,
-      transparent 100%
-    );
-    animation: wave-anim 2s linear infinite;
-  }
-}
-
-@keyframes wave-anim {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%); /* Adjust this value for wave speed */
-  }
-}
 
 
 
@@ -351,7 +311,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+
   border: 2px solid black;
 }
 
@@ -453,21 +413,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .nav-link#projects-tabs-tab-first::before {
   background: #98A2FF;
-  
   border-radius: 55px 0px 0px 55px;
+}
+.nav-link#projects-tabs-tab-first:hover {
+  background: #98A2FF;
 }
 
 .nav-link#projects-tabs-tab-second::before {
   background: #D0F4DE;
 }
+.nav-link#projects-tabs-tab-second:hover {
+  background: #D0F4DE;
+}
 .nav-link#projects-tabs-tab-third::before {
+  background: #FCF6BD;
+}
+.nav-link#projects-tabs-tab-third:hover {
   background: #FCF6BD;
 }
 
 .nav-link#projects-tabs-tab-fourth::before {
   background: #A9DEF9;
-  
   border-radius: 0 55px 55px 0;
+}
+.nav-link#projects-tabs-tab-fourth:hover {
+  background: #A9DEF9;
 }
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
@@ -501,6 +471,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
   background-color: pink; /* Default background color */
+  border: 2px solid black;
 
 }
 
@@ -589,18 +560,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  margin: 5px 10% 5px 10%;
 }
 
 .proj-txtx .tags {
   font-size: 15px;
-  margin: 30px 40px;
+  margin: 30px 15% 30px 15%;
 }
 .proj-txtx .tag-proj {
   background: linear-gradient(to bottom right, #98A2FF, #FF99C8, #FCF6BD);;
   border-radius: 10px;
   border: black solid 1.5px;
   padding: 5px 12px 5px 12px;
-  margin: 0px 5px 20px 5px;
+  margin: 0px 0px 10px 5px;
   color: black;
   display: inline-block;
   white-space: nowrap;
@@ -638,6 +610,67 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 
+.footer {
+  margin-top: 0;
+  padding: 200px 0px;
+  background-color: #98A2FF;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-tx{
+  margin-top: 100px;
+
+}
+
+.footer-tx h4 {
+  padding-bottom: 5px;
+  border-bottom: black solid 1px;
+}
+
+
+
+.footer-tx .col {
+  margin: 0px 20px;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.footer-tx #right.col {
+  text-align: end;
+}
+.footer-tx .made-by {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+
+
+
+.svg-container-footer {
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: -200px;
+}
+
+.footer-wave {
+  background: url("./assets/img/footer-wave.svg") repeat-x;
+  height: 70px;
+  width: 3840px;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1920px, 0, 0);
+  }
+}
 
 
 

@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
 
+
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -51,12 +52,12 @@ export const Banner = () => {
                             I thrive on the intersection of creativity and technology, channeling my love for coding into visually appealing creations.
                             Whether it's crafting dynamic websites or captivating data visualizations, I eagerly tackle any challenge, leveraging my
                             creativity to bring fresh ideas to life. </p>
-                        <button onClick={() => console.log("View More")}>View More <ArrowRightCircle size={25} /></button>
+                        <button onClick={() => console.log("View More")}>View More <ArrowRightCircle id="arrow" size={25} /></button>
                     </Col>
                 </Row>
             </Container>
-            <div className="wavy-line">
-                
+            <div className="svg-container">
+                <div className="wave"></div>
             </div>
         </section>
     )

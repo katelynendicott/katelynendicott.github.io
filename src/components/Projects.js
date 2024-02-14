@@ -117,7 +117,7 @@ export const Projects = () => {
 
                             <Tab.Content>
                             <Tab.Pane eventKey="first">
-                                    <Row xs={1} md={2} className="g-4">
+                                    <Row xs={1} md={1} lg={2} className="g-4">
                                     {
                                             projectData.map((project, idx) => {
                                                 return(
