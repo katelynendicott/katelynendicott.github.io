@@ -4,6 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
+import { Link } from 'react-router-dom';
 
 
 
@@ -36,7 +37,7 @@ export const NavBar = () => {
     return(
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
     <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to='/home'>
             <h2>Katelyn Endicott</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">

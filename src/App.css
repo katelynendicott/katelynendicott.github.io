@@ -532,7 +532,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 
-.proj-btn button {
+.proj-btn {
   padding: 20px 40px;
   background-color: #98A2FF;
   color: black;

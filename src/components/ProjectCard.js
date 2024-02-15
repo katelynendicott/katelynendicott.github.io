@@ -1,4 +1,5 @@
 import { Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const ProjectCard = ({ category,title, tags, description, imgUrl }) => {
 
@@ -15,9 +16,7 @@ export const ProjectCard = ({ category,title, tags, description, imgUrl }) => {
         }
     };
 
-    const handleClick = () => {
-        alert('You clicked project button!');
-    }
+
     
 
     return (
@@ -34,9 +33,9 @@ export const ProjectCard = ({ category,title, tags, description, imgUrl }) => {
                 </div>
             </div>
             <div className="proj-btn">
-                <button onClick={handleClick}>
+                <Link  to='/projectpage'>
                     See More
-                </button>
+                </Link>
             </div>
         </div>
         </Col>
