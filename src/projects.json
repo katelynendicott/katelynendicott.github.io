@@ -1,4 +1,3 @@
-
 [
     {
         "id": 1,
@@ -35,14 +34,15 @@
             }
         ],
         "image" : "/assets/img/code-projects/image.png",
-        "link" : "#",
-        "outcome" : "Achieved a 90% increase in geolocation accuracy by developing a REST API tool, using C#, that extracted data and conducted forward geolocation. This enhancement facilitated precise mapping for over 5,000 user-entered business addresses and significantly expanded the scope of spatialization.Enhanced user experience through the development of an intuitive query interface and dynamic visualization of data, utilizing the power of the API tool."
-    }
-]
-        
+        "link" : "",
+        "outcome" : "Achieved a 90% increase in geolocation accuracy by developing a REST API tool, using C#, that extracted data and conducted forward geolocation. This enhancement facilitated precise mapping for over 5,000 user-entered business addresses and significantly expanded the scope of spatialization.Enhanced user experience through the development of an intuitive query interface and dynamic visualization of data, utilizing the power of the API tool.",
+        "previewImg": "projImg1.png"
+    },
 
 
-[
+
+
+
     {
         "id": 2,
         "type": "data",
@@ -54,15 +54,16 @@
         "methodology" : "tbd",
         "keyInsights" : ["Money and skill are related", "Many players are overvalued"],
         "image" : "",
-        "link" : "#",
+        "link" : "",
         "note" : "This project is soley based on the 2022 season, I would like to expand this in the future to use contious data. I would also like to code the case study.",
-        "impact" : "Helps mlb managers make player decisions"
-    }
+        "impact" : "Helps mlb managers make player decisions",
+        "previewImg": "projImg2.png"
+    },
 
-]
 
 
-[
+
+
     {
         "id": 3,
         "type": "design",
@@ -87,6 +88,55 @@
                             ""
                         ],
         "link" : "#",
+        "previewImg": "projImg3.png"
+    },
+    {
+        "id": 4,
+        "type": "design",
+        "projectName": "Verdi Website Design",
+        "tags": ["Brand Design", "Website Design", "SquareSpace"],
+        "tagLine": "Brand & Website Design",
+        "previewImg": "projImg4.png"
+    },
+    {
+        "id": 5,
+        "type": "code",
+        "projectName": "Secret Santa",
+        "tags": ["Website Design", "HTML", "CSS"],
+        "tagLine": "Front-end Development",
+        "previewImg": "projImg5.png"
+    },
+    {
+        "id": 6,
+        "type": "design",
+        "projectName": "MISA Website",
+        "tags": ["Website Design", "Weebly"],
+        "tagLine": "Website Design",
+        "previewImg": "projImg6.png"
+    },
+    {
+        "id": 7,
+        "type": "design",
+        "projectName": "Kate Taylor Website",
+        "tags": ["Website Design", "Shopify"],
+        "tagLine": "Brand & Website Design",
+        "previewImg": "projImg7.png"
+    },
+    {
+        "id": 8,
+        "type": "design",
+        "projectName": "Mt Baker Magazine Design",
+        "tags": ["Graphic Design", "Adobe InDesign"],
+        "tagLine": "Graphic Design",
+        "previewImg": "projImg8.png"
+    },
+    {
+        "id": 9,
+        "type": "design",
+        "projectName": "AvoDough Brand Design",
+        "tags": ["Brand Design", "Adobe Illustrator"],
+        "tagLine": "Brand Design",
+        "previewImg": "projImg9.png"
     }
 
 ]

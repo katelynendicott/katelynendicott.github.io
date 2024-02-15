@@ -472,6 +472,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 24px;
   background-color: pink; /* Default background color */
   border: 2px solid black;
+  height: 400px;
 
 }
 

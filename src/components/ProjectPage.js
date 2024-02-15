@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { useEffect } from 'react';
-// import { Banner } from './Banner';
-// import { Skills } from './Skills';
-// import { Projects } from './Projects'
+
+// //import data
+// import Data from '../projects.json'
 
 import {ProjectBanner} from './ProjectBanner'
 
@@ -12,14 +12,16 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
-export const ProjectPage = () => {
+export const ProjectPage = ({ selectedProject }) => {
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
     }, []);
 
+    console.log("project:",selectedProject);
+
     return (
         <div className="App">
-            <ProjectBanner/>
+            <ProjectBanner selectedProject={selectedProject}/>
         
             
 
