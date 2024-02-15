@@ -48,7 +48,7 @@ export const Banner = () => {
                     <Col xs={12} md={10} xl={10}>
                         <span className="tagline">Welcome to my portfolio</span>
                         <h1>{`Hi, I'm a `}<span className="wrap">{text}</span></h1>
-                        <p>Welcome to my portfolio! I'm Katelyn, a passionate software developer based in the Greater Seattle area.
+                        <p>Welcome to my portfolio! I'm Katelyn, a passionate Full-Stack Developer based in the Greater Seattle area.
                             I thrive on the intersection of creativity and technology, channeling my love for coding into visually appealing creations.
                             Whether it's crafting dynamic websites or captivating data visualizations, I eagerly tackle any challenge, leveraging my
                             creativity to bring fresh ideas to life. </p>

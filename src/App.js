@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
@@ -7,10 +7,10 @@ import { Projects } from './components/Projects'
 import { Footer } from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Nav } from 'react-bootstrap';
 
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
       <NavBar/>
@@ -22,4 +22,3 @@ function App() {
   );
 }
 
-export default App;

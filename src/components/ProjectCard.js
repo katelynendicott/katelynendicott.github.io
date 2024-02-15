@@ -14,6 +14,10 @@ export const ProjectCard = ({ category,title, tags, description, imgUrl }) => {
                 return "#ffffff"; // Default color if category is not recognized
         }
     };
+
+    const handleClick = () => {
+        alert('You clicked project button!');
+    }
     
 
     return (
@@ -30,7 +34,7 @@ export const ProjectCard = ({ category,title, tags, description, imgUrl }) => {
                 </div>
             </div>
             <div className="proj-btn">
-                <button>
+                <button onClick={handleClick}>
                     See More
                 </button>
             </div>
