@@ -34,7 +34,7 @@
             }
         ],
         "image" : "/assets/img/code-projects/image.png",
-        "link" : "",
+        "link" : "https://github.com/katelynendicott",
         "outcome" : "Achieved a 90% increase in geolocation accuracy by developing a REST API tool, using C#, that extracted data and conducted forward geolocation. This enhancement facilitated precise mapping for over 5,000 user-entered business addresses and significantly expanded the scope of spatialization.Enhanced user experience through the development of an intuitive query interface and dynamic visualization of data, utilizing the power of the API tool.",
         "previewImg": "projImg1.png"
     },

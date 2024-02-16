@@ -2,12 +2,13 @@ import React from 'react';
 
 import { useEffect } from 'react';
 
-import { CodeLayout } from './CodeLayout'
-import { DataLayout } from './DataLayout'
-import { DesignLayout } from './DesignLayout'
+import { CodeLayout } from './Code/CodeLayout'
+import { DataLayout } from './Data/DataLayout'
+import { DesignLayout } from './Design/DesignLayout'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import ProjectNotFound from './ProjectNotFound';
 
 
 
@@ -28,6 +29,7 @@ export const ProjectPage = ({ selectedProject }) => {
         layoutComponent = <DesignLayout project={selectedProject} />;
     } else {
         // Handle unknown project types or provide a default layout
+        layoutComponent = <ProjectNotFound />;
         console.log("choosing layout project page error");
     }
 

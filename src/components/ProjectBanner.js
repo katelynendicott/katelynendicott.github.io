@@ -16,19 +16,23 @@ export const ProjectBanner = ({project}) => {
                     <Col xs={12} md={10} xl={10}>
                         <span className="tagline">{project.tagLine}</span>
                         <h1>{project.projectName}</h1>
-                        <p>{project.overview} </p>
+                        {project.overview && (<p>{project.overview} </p>)}
 
 
+                        {project.keyFeatures && (
                         <div className='keyFeatures'>
                             {project.keyFeatures.map((feature, featureIdx) => (
                             <span key={featureIdx} className="tag-proj">{feature}</span>
                             ))}
                         </div>
+                        )}
+                        {project.tags && (
                         <div className='technologies'>
                             {project.tags.map((technologies, technologiesIdx) => (
                             <span key={technologiesIdx} className="tag-proj">{technologies}</span>
                             ))}
                         </div>
+                        )}
 
                         <button onClick={() => console.log("View More")}>View More <ArrowRightCircle id="arrow" size={25} /></button>
                     </Col>

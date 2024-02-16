@@ -37,7 +37,7 @@ export const ProjectCard = ({ project, handleClick }) => {
                     </div>
                 </div>
                 <div className="proj-btn">
-                    <Link  to='/projectpage' onClick={() => handleClick(project)}>
+                    <Link  className='see-more-btn'to='/projectpage' onClick={() => handleClick(project)}>
                         See More
                     </Link>
                 </div>

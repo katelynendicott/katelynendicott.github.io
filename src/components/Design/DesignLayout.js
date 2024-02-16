@@ -4,14 +4,14 @@ import { useEffect } from 'react';
 
 
 
-import {ProjectBanner} from './ProjectBanner'
+import {ProjectBanner} from '../ProjectBanner'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
 
-export const DataLayout = ({ project }) => {
+export const DesignLayout = ({ project }) => {
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
     }, []);
@@ -22,7 +22,7 @@ export const DataLayout = ({ project }) => {
 
     return (
         <div className="code-page">
-            <h1>Data</h1>
+            <h1>design</h1>
             <ProjectBanner project={project}/>
         </div>
     );

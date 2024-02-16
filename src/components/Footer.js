@@ -4,11 +4,13 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import { Container, Row, Col } from "react-bootstrap";
 export const Footer = () => {
     return(
+        
         <section className="footer">
             <div className="svg-container-footer">
                 <div className="footer-wave"></div>
             </div>
-
+            
+            <div className='footer-section'>
             <Container className="footer-tx">
                 <Row >
                     <Col id="left">
@@ -31,9 +33,8 @@ export const Footer = () => {
 
             </Container>
 
-            <div>
-                
             </div>
+            
 
         </section>
     )
