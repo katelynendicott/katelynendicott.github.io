@@ -3,18 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { Link } from 'react-router-dom';
 
-import { useNavigate } from "react-router";
-export const CodeBanner = ({project, handleScroll}) => {
 
-    const navigate = useNavigate();
+export const DesignBanner = ({project, handleScroll}) => {
 
-
-    
-
-    
 
     return (
-        <section className="project-banner code-banner" id="home">
+        <section className="project-banner design-banner" id="home">
             <Container>
                 <Row className="all-banner">
                     <Col className="left-banner" xs={12} md={9} xl={9}>
@@ -25,16 +19,12 @@ export const CodeBanner = ({project, handleScroll}) => {
                         
 
                         <Link className="banner-btn" onClick={handleScroll}>View More <ArrowRightCircle id="arrow" size={25} /></Link>
-
-                
-                        
                     </Col>
-
-                    <Col >
+                    <Col>
                     <div className="banner-features-tech right-banner">
                         {project.keyFeatures && (
                         <div className='keyFeatures'>
-                            <h5>Key Features</h5>
+                            <h5>Key Tasks</h5>
                             {project.keyFeatures.map((feature, featureIdx) => (
                             <span key={featureIdx} className="banner-tag">{feature}</span>
                             ))}
@@ -49,11 +39,12 @@ export const CodeBanner = ({project, handleScroll}) => {
                             ))}
                         </div>
                         )}
-                        </div></Col>
+                        </div>
+                    </Col>
                 </Row>
             </Container>
             <div className="svg-container-alt">
-                <div className="blue-wave"></div>
+                <div className="green-wave"></div>
             </div>
         </section>
     )

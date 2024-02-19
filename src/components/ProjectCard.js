@@ -10,13 +10,15 @@ export const ProjectCard = ({ project, handleClick }) => {
             case "code":
                 return "#D0F4DE";
             case "data":
-                return "#FCF6BD";
+                return "#FF99C8";
             case "design":
                 return "#A9DEF9";
             default:
                 return "#ffffff"; // Default color if category is not recognized
         }
     };
+
+    
 
 
     
@@ -36,7 +38,7 @@ export const ProjectCard = ({ project, handleClick }) => {
                         ))}
                     </div>
                 </div>
-                <div className="proj-btn">
+                <div>
                     <Link  className='see-more-btn'to='/projectpage' onClick={() => handleClick(project)}>
                         See More
                     </Link>

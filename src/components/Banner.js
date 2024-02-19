@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
+import { Link } from 'react-router-dom';
+
+
 
 
 export const Banner = () => {
@@ -52,7 +55,7 @@ export const Banner = () => {
                             I thrive on the intersection of creativity and technology, channeling my love for coding into visually appealing creations.
                             Whether it's crafting dynamic websites or captivating data visualizations, I eagerly tackle any challenge, leveraging my
                             creativity to bring fresh ideas to life. </p>
-                        <button onClick={() => console.log("View More")}>View More <ArrowRightCircle id="arrow" size={25} /></button>
+                        <Link className="banner-btn" as={Link} to="/skills" >View More <ArrowRightCircle id="arrow" size={25} /></Link>
                     </Col>
                 </Row>
             </Container>

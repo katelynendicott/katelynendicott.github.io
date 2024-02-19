@@ -18,12 +18,14 @@ export const Home = ({ setSelectedProject , anchorId}) => {
         }
         }, [anchorId]);
 
+
     return (
         <div className="App">
 
             <Banner/>
             <Skills/>
             <Projects onSelectProject={setSelectedProject}/>
+            
 
         </div>
     );

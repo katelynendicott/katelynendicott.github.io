@@ -39,9 +39,9 @@ export default function App() {
 
           <Route path='/' element={<Home setSelectedProject={setSelectedProject} />} />
 
-          <Route path="/home" element={<Home anchorId="home" />} />
-          <Route path="/skills" element={<Home anchorId="skills" />} />
-          <Route path="/projects" element={<Home anchorId="projects" />} />
+          <Route path="/home" element={<Home anchorId="home" setSelectedProject={setSelectedProject}/>} />
+          <Route path="/skills" element={<Home anchorId="skills" setSelectedProject={setSelectedProject}/>} />
+          <Route path="/projects" element={<Home anchorId="projects" setSelectedProject={setSelectedProject}/>} />
 
           <Route path='/projectpage' element={<ProjectPage selectedProject={selectedProject} />} />
 

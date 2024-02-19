@@ -33,7 +33,6 @@ export const ProjectPage = ({ selectedProject }) => {
         console.log("choosing layout project page error");
     }
 
-    console.log("project:",selectedProject);
 
     return (
         <div className="project-page">

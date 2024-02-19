@@ -12,7 +12,9 @@ import Data from '../projects.json'
 export const Projects = ({ onSelectProject }) => {
 
     const handleProjectClick = (project) => {
+
         onSelectProject(project);
+
     };
 
     //filter the projects by category
