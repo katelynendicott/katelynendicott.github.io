@@ -32,6 +32,8 @@ export const DesignLayout = ({ project }) => {
 
             
 
+            
+
 
 
             {/* BEFORE IMAGES */}
@@ -57,12 +59,20 @@ export const DesignLayout = ({ project }) => {
                     
                     <div>
                         <h2 className='h2-in-div'>Wireframes</h2>
-                        
+
                         {project.wireframes.map((image, imageidx) => (
                             <img src={require(`../../assets/img/design-projects/${image}`)} alt={project.projectName}  />
                         ))}
                     </div>
                 
+            </div>
+            )}
+             {/* LAYOUT IMAGE */}
+             {project.layoutPreview &&  (
+            <div className='layout-preview'>     
+                    <div>
+                        <img src={require(`../../assets/img/design-projects/${project.layoutPreview}`)} alt={project.projectName}  />
+                    </div>
             </div>
             )}
 

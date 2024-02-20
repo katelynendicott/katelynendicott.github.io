@@ -37,9 +37,9 @@ export const DataLayout = ({ project }) => {
             {project.dataSource &&  (
 
             <div className='data-source scroll-to-section' id="code-target-div">
-                <h2>Data Source</h2>
-                <div>
                 
+                <div>
+                <h2 className='h2-in-div'>Data Source</h2>
                     <p>{project.dataSource}</p>
                 </div>
             </div>
@@ -49,11 +49,13 @@ export const DataLayout = ({ project }) => {
             {/* KEY INSIGHTS */}
             {project.keyInsights && (
             <div className='key-insights'>
+                <h2>Key Insights</h2>
                 
                 <div>
-                <h2 className='h2-in-div'>Key Insights</h2>
                     {project.keyInsights.map((insight, insightidx) => (
-                        <p>{project.keyInsights}</p>
+                        <div className='insight'>
+                        <p>{insight}</p>
+                        </div>
                     ))}
                 </div>
             </div>
@@ -62,8 +64,9 @@ export const DataLayout = ({ project }) => {
             {/* IMPACT */}
             {project.impact && (
             <div className='impact'>
-                <h2>Impact</h2>
+                
                 <div>
+                    <h2 className='h2-in-div'>Impact</h2>
                     <p>{project.impact}</p>
                 </div>
             </div>
@@ -91,7 +94,7 @@ export const DataLayout = ({ project }) => {
                     <img className="page-preview"src={require(`../../assets/img/project-imgs/${project.previewImg}`)} alt={project.projectName}  />
                     
                     <div className='link-proj-btn'>
-                        <a target="_blank" href={project.link}>View Project on Tableau</a>
+                        <a href={project.link}>View Project on Tableau</a>
                     </div>
 
                 </div>

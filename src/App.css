@@ -119,7 +119,7 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
-.navbar-text button {
+.navbar-text .email {
   font-weight: 700;
   color: black;
   border: 1px solid black;
@@ -129,11 +129,12 @@ span.navbar-text {
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
+  text-decoration: none;
 }
-.navbar-text button span {
+.navbar-text .email span {
   z-index: 1;
 }
-.navbar-text button::before {
+.navbar-text .email::before {
   content: "";
   width: 0%;
   height: 100%;
@@ -144,10 +145,10 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover {
+.navbar-text .email:hover {
   color: #121212;
 }
-.navbar-text button:hover::before {
+.navbar-text .email:hover::before {
 	content: "";
 	width: 100%;
 	height: 100%;
@@ -680,7 +681,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-bottom: black solid 1px;
 }
 
-
+.footer a {
+  text-decoration: none;
+  color: black;
+}
 
 .footer-tx .col {
   margin: 0px 20px;
@@ -1058,19 +1062,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .key-insights {
   background-color: #D0F4DE;
-  display: flex;
-  flex-direction: column;
+
   padding: 100px 100px;
 
 }
 
+
 .key-insights div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.key-insights .insight{
   background-color: #fff;
   text-align: center;
   padding: 40px 5%;
-  margin: 10px 15%;
+  margin: 10px;
   border-radius: 50px;
   border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 45%;
 }
 
 
@@ -1122,13 +1135,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .design-page h2 {
-  padding-top: 25px;
+  padding-top: 15px;
   font-size: 45px;
 	font-weight: 700;
   text-align: center;
-  margin: 20px 0 50px 0;
+  margin: 15px 0 50px 0;
 }
-
 
 .before-imgs{
   background-color: #D0F4DE;
@@ -1185,31 +1197,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
 }
 
+.layout-preview {
+  background-color: #98A2FF;
+}
+
+.layout-preview img {
+  width: 100%;
+}
+
 .final-images{
   background-color: #FF99C8;
   display: flex;
   flex-direction: column;
-  padding: 100px 100px;
+  padding: 100px 0px;
   align-content: center;
   flex-wrap: wrap;
 }
 
 .final-images div{
   width: 100%;
-  border: 2px solid black;
-  background-color: #fff;
-  border-radius: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  
 }
 
 .final-images img{
-  width: 45%;
-  margin: 20px;
-  border-radius: 20px;
-  border: 1px solid black;
+  width: 100%;
   
 }

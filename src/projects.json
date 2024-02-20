@@ -9,34 +9,57 @@
         "keyFeatures": ["REST API", "UserFriendly Query Interface", "Forward Geolocation"],
         "challenges": [
             {
-                "description": "Limited techologies available to use",
+                "description": "Limited Available Technologies",
                 "solutions": [
                     {
-                    "description": "mapped out current systems and determined how i can use them to get what i need to be done."
+                    "description": "Strategically mapped out existing systems to maximize available resources, identifying key areas for optimization and integration."
                     }
                 ]
             },
             {
-                "description": "Limited Time, only 2 weeks for coding",
+                "description": "Time Constraints",
                 "solutions": [
                     {
-                    "description": "Had stages in the project, had a base stage that had what was needed, then if i finished it had more features to add if there was time."
+                    "description": "Employed a phased approach to project development, prioritizing essential features within the allocated timeframe. A base stage was established, with additional features added as time permitted."
                     }
                 ]
             },
             {
-                "description": "Limited Experience using C# and .NET",
+                "description": "Skill Gap in C# and .NET",
                 "solutions": [
                     {
-                    "description": "Even when we werent in the coding stages of the project, i was practicing coding. Mapping out how it exactly needed to be done left little room for confusion"
+                    "description": "Mitigated by continuous practice and meticulous planning, ensuring clarity in implementation. Practiced coding regularly even outside of project coding stages to bolster proficiency."
                     }
                 ]
             }
         ],
         "image" : "/assets/img/code-projects/image.png",
         "link" : "https://github.com/katelynendicott",
-        "outcome" : "Achieved a 90% increase in geolocation accuracy by developing a REST API tool, using C#, that extracted data and conducted forward geolocation. This enhancement facilitated precise mapping for over 5,000 user-entered business addresses and significantly expanded the scope of spatialization.Enhanced user experience through the development of an intuitive query interface and dynamic visualization of data, utilizing the power of the API tool.",
+        "outcome" : "The GeoLocation API achieved a 90% increase in geolocation accuracy. This tool alows users to spatialize over 5,000 business addresses, significantly expanding the scope of spatialization efforts. Furthermore, the intuitive query interface and dynamic data visualization enhanced user experience, cementing the tool as a cornerstone for future spatial data projects.",
         "previewImg": "projImg1.png"
+    },
+    {
+        "id": 7,
+        "type": "code",
+        "projectName": "React Portfolio",
+        "tagLine": "Front-end Development",
+        "tags": ["React.js", "Bootstrap", "JavaScript","JSON", "CSS" ,"HTML"],
+        "overview": "Designed and developed a vibrant and dynamic portfolio website using React.js, Bootstrap, and other front-end technologies. The primary goal was to create a visually appealing and user-friendly platform to effectively showcase personal projects and promote skills and expertise.",
+        "keyFeatures": ["Bright UX", "Dynamic Project Pages"],
+        "challenges": [
+            {
+                "description": "Learning React.js",
+                "solutions": [
+                    {
+                    "description": "Invested time in watching tutorials and studying the React library to deepen understanding and gain necessary skills for project implementation."
+                    }
+                ]
+            }
+        ],
+        "image" : "",
+        "link" : "https://github.com/katelynendicott/professional-portfolio",
+        "outcome" : "The React Portfolio project resulted in the creation of a bright, fun, and professional portfolio website, serving as an effective tool for self-promotion. By learning React.js and other front-end technologies, I not only developed a powerful promotional platform but also expanded my skill set for future projects.",
+        "previewImg": "Portfolioproj.PNG"
     },
 
 
@@ -49,14 +72,16 @@
         "projectName": "MLB Player Evaluation Tool",
         "tagLine": "Data Analysis",
         "tags": ["Data Analysis", "Tableau", "Data Cleaning"],
-        "overview": "Utilized player statistics and salaries from the 2022 season to explore the correlation between salary and skill. Additionally, developed a compelling use case for further performance analysis of players.",
-        "keyFeatures": ["MLB Manager Case Study", "Money & Skill trends"],
-        "dataSource" : "tbd",
-        "keyInsights" : ["Money and skill are related", "Many players are overvalued"],
+        "overview": "Explored the correlation between player statistics and salaries from the 2022 MLB season, aiming to provide insights into the relationship between compensation and skill level. Developed a comprehensive tool for performance analysis, with a focus on aiding MLB managers in making informed player decisions.",
+        "keyFeatures": ["MLB Manager Case Study", "Money & Skill Trends"],
+        "dataSource" : "Data was sourced from the ESPN MLB stats website, encompassing statistics and salaries for over 900 players from the 2022 season.",
+        "keyInsights" : ["Demonstrated a clear relationship between player salaries and performance metrics, indicating the influence of financial investment on player selection and compensation.", 
+        "Highlighted instances where players may be overvalued relative to their on-field performance, providing valuable insights for talent evaluation and resource allocation."],
+        
         "images" : ["",""],
         "link" : "https://public.tableau.com/app/profile/katelyn.endicott/viz/MLBTeamManagerPlayerEvaluationTool/MLBTeams",
-        "note" : "This project is soley based on the 2022 season, I would like to expand this in the future to use contious data. I would also like to code the case study.",
-        "impact" : "Helps mlb managers make player decisions",
+        "note" : "Plans include expanding the tool to incorporate continuous data analysis beyond the 2022 season and implementing a coded version of the Evaluation Tool to further enhance its utility and predictive capabilities.",
+        "impact" : "The MLB Player Evaluation Tool serves as a valuable resource for MLB managers, offering data-driven insights to support player selection and roster management decisions.",
         "previewImg": "projImg2.png"
     },
 
@@ -64,17 +89,62 @@
 
 
 
+    
+
+
+    {
+        "id": 4,
+        "type": "design",
+        "projectName": "Verdi Website Design",
+        "tags": ["Brand Design", "Website Design", "SquareSpace"],
+        "tagLine": "Brand & Website Design",
+        "overview": "Led the redesign of Verdi's website, focusing on enhancing user experience (UX) and establishing a cohesive brand identity. The project aimed to simplify page layouts, improve navigation, and create engaging content to attract and inform visitors effectively.",
+        "keyFeatures": ["User Experience Enhancement", "User Flows Optimization"],
+        "beforeImages" : [ 
+                            "VBbefore.png"
+                        ],
+        "wireframes" : [
+            "VBWireframe.png"
+            
+        ],
+        "finalImages" : [
+            "VBfinal.png"
+            
+        ],
+        "previewImg": "VBproj.png",
+        "link":"https://www.verdibrows.com/",
+        "impact":"The redesigned Verdi website resulted in a significant improvement in user experience, with simplified pages and uniform branding contributing to easier navigation and increased engagement. Customers can now effortlessly explore services and access detailed information, leading to a more positive and informative online experience."
+    },
+    {
+        "id": 6,
+        "type": "design",
+        "projectName": "MISA Website",
+        "tags": ["Website Design", "Weebly"],
+        "tagLine": "Website Development",
+        "overview": "Designed and developed the MISA (Management Information Systems Association) website to serve as a central hub for club information and events, aimed at promoting engagement and participation among students. Leveraged web design skills and utilized the Weebly platform within budget constraints to create an easily accessible and visually appealing online presence for the club.",
+        "keyFeatures": ["Centralized Information Hub", "Enhanced Contact Accessibility"],
+        "beforeImages" : [ 
+            "MISABefore.png"
+        ],
+        "finalImages" : [
+            "MISAFinal.png"
+            
+        ],
+        "previewImg": "MISAproj.png",
+        "link":"https://wwumisa.weebly.com/",
+        "impact":"The MISA website has successfully fulfilled its objectives of promoting club events and fostering student engagement. By providing easy access to club information and a convenient means of communication, the website has effectively contributed to increasing participation and enhancing the overall student experience within the club."
+    },
     {
         "id": 3,
         "type": "design",
         "projectName": "Admin Page UX",
         "tagLine": "UX Design",
         "tags": ["Agile", "Figma"],
-        "overview": "Redesigned Admin page of Reading Room to be more intuitive and user friendly.",
-        "keyFeatures": ["Condensed features", "Distinct pages"],
+        "overview": "Led the redesign efforts for the admin page of the Reading Room web application, focusing on improving usability and intuitiveness for administrators. The project aimed to streamline administrative tasks and enhance the overall user experience.",
+        "keyFeatures": ["Condensed UserFlows", "Distinct pages"],
+        "layoutPreview": "RRLayoutImg.png",
         "beforeImages" : [ 
-                            "RRbefore1.png",
-                            "RRbefore2.png"
+                            "RRbefore.png"
                         ],
         "wireframes" : [
                             "RRwireframe1.png",
@@ -82,65 +152,57 @@
                             
                         ],
         "finalImages" : [
-                            "RRfinal1.PNG",
-                            "RRfinal2.PNG",
-                            "RRfinal3.PNG",
-                            "RRfinal4.PNG"
-                            
+                            "RROverview.png"
+
                         ],
-        "previewImg": "projImg3.png",
-        "impact": "This design improved "
-    },
-    {
-        "id": 4,
-        "type": "design",
-        "projectName": "Verdi Website Design",
-        "tags": ["Brand Design", "Website Design", "SquareSpace"],
-        "tagLine": "Brand & Website Design",
-        "previewImg": "projImg4.png"
+        "previewImg": "RRproj.png",
+        "impact": "The redesigned admin page significantly improved usability and efficiency for administrators, simplifying complex tasks and providing a more intuitive interface for managing Reading Room content."
     },
 
-
-    
     {
         "id": 5,
         "type": "code",
-        "projectName": "Secret Santa",
-        "tags": ["Website Design", "HTML", "CSS"],
+        "projectName": "Silent Elves Website",
         "tagLine": "Front-end Development",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "overview": "Designed and developed the front-end for the Silent Elves website—a platform enabling users to create and share Christmas wish lists and manage Secret Santa groups. The project focused on delivering a user-friendly interface with intuitive navigation for seamless wish list creation and group management.",
+        "keyFeatures": ["Create Wishlists", "Secret Santa Groups"],
+        "challenges": [
+            {
+                "description": "Limited Available Technologies. Restriction to use PHP, CSS, HTML, and JavaScript for the project.",
+                "solutions": [
+                    {
+                    "description": "Leveraged available technologies effectively, ensuring compatibility and functionality within the specified scope."
+                    }
+                ]
+            },
+            {
+                "description": "Time Constraints",
+                "solutions": [
+                    {
+                    "description": " Proactively designed the interface in advance, minimizing design decisions during coding and maximizing development efficiency."
+                    }
+                ]
+            },
+            {
+                "description": "Collaborating effectively within a team environment",
+                "solutions": [
+                    {
+                    "description": " Established clear roles and responsibilities, utilized version control with GitHub for efficient code management, and fostered in-person collaboration for seamless project execution."
+                    }
+                ]
+            }
+        ],
+        "image" : "/assets/img/code-projects/image.png",
+        "link" : "https://github.com/katelynendicott/Silent-Elves-Wishlist",
+        "outcome" : "The Silent Elves website successfully achieved its objectives of providing a simple and intuitive platform for wish list creation and Secret Santa group management. The front-end design prioritized usability, ensuring users can effortlessly utilize the platform's two primary features.",
         "previewImg": "projImg5.png"
-    },
-    {
-        "id": 6,
-        "type": "design",
-        "projectName": "MISA Website",
-        "tags": ["Website Design", "Weebly"],
-        "tagLine": "Website Design",
-        "previewImg": "projImg6.png"
-    },
-    {
-        "id": 7,
-        "type": "design",
-        "projectName": "Kate Taylor Website",
-        "tags": ["Website Design", "Shopify"],
-        "tagLine": "Brand & Website Design",
-        "previewImg": "projImg7.png"
-    },
-    {
-        "id": 8,
-        "type": "design",
-        "projectName": "Mt Baker Magazine Design",
-        "tags": ["Graphic Design", "Adobe InDesign"],
-        "tagLine": "Graphic Design",
-        "previewImg": "projImg8.png"
-    },
-    {
-        "id": 9,
-        "type": "design",
-        "projectName": "AvoDough Brand Design",
-        "tags": ["Brand Design", "Adobe Illustrator"],
-        "tagLine": "Brand Design",
-        "previewImg": "projImg9.png"
     }
+    
+
+    
+    
+
+    
 
 ]

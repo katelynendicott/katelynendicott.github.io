@@ -24,7 +24,7 @@ export const Footer = () => {
                     </Col>
                     <Col id="right">
                         <h4>Resume</h4>
-                        <p>download</p>
+                        <a href='../../assets/KatelynEndicott_Resume.pdf' download="KatelynEndicott_Resume.pdf">download</a>
                     </Col>
 
 

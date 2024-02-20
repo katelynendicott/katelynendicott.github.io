@@ -32,7 +32,7 @@ export const Projects = ({ onSelectProject }) => {
                         <h2>
                             Projects
                         </h2>
-                        <p>lorem ipson </p>
+                        <br/><br/>
                 
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
 
